@@ -1,0 +1,27 @@
+# Ignore all logfiles and tempfiles.
+/doc
+/log/*
+/log
+/tmp/*
+/tmp
+/.idea
+/.project
+dump.rdb
+
+public/uploads/
+public/uploads/*
+public/assets/*
+
+
+.env
+.env\.test
+
+.env\.hml
+
+.env.development
+
+config/database\.yml
+
+\.env\.staging
+
+/nginx/certbot/*
