@@ -1,4 +1,5 @@
 1)clone o repositorio
+
 2)pause o REDIS
 ```
 sudo service redis stop
