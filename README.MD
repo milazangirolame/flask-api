@@ -8,7 +8,7 @@ sudo service redis stop
 ```
 sudo service postgresql stop
 ```
-
+4) vamos buildar o projeto com o docker
 ```
 docker-compose build
 ```
