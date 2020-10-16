@@ -3,13 +3,14 @@ services:
   db:
     image: 'postgres:alpine'
     environment:
-      POSTGRES_DB: <%= ENV['PROJECT_NAME'] %>
-      POSTGRES_USER: <%= ENV['PROJECT_DB_USER'] %>
-      POSTGRES_PASSWORD: <%= ENV['PROJECT_DB_PASSWORD'] %>
+      POSTGRES_DB: $PROJECT_NAME
+      POSTGRES_USER: $PROJECT_DB_USER
+      POSTGRES_PASSWORD: $PROJECT_DB_PASSWORD
     ports:
       - '5432:5432'
     volumes:
       - 'postgres:/var/lib/postgresql/data'
+    env_file: .env
   cache:
     image: 'redis:alpine'
     ports:

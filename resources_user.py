@@ -1,24 +1,9 @@
-from flask import Flask
-from flask import request
-from models import db
+from schemas.user import UserSchema
+user_schema = UserSchema(exclude='visits')
 
 
-app = Flask(__name__)
-
-app.config['DEBUG'] = True
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://{PROJECT_DB_USER}:{PROJECT_DB_PASSWORD}@localhost/{PROJECT_NAME}'
-
-db.init_app(app)
-
-
-
-@app.route('/')
-def get_home():
-    return 'OI ESTOU AQUI'
-
-if __name__ == '__main__':
-    app.run(host = '0.0.0.0', port = 80, debug = True)
-
+USER_ALREADY_EXIST = "A user with the same name already exists"
+USER_CREATED_SUCCESSFULLY = "User was sucessfully created"
 
 
 @app.route('/users')
