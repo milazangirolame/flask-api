@@ -1,10 +1,10 @@
-1)clone o repositorio
+1) clone o repositorio
 
-2)pause o REDIS
+2) pause o REDIS
 ```
 sudo service redis stop
 ```
-3)pare o POSTGRES
+3) pare o POSTGRES
 ```
 sudo service postgresql stop
 ```
@@ -12,11 +12,12 @@ sudo service postgresql stop
 ```
 docker-compose build
 ```
-4)verifique o container
+5) verifique o container
 ```
 docker ps
 ```
-5)suba o projeto
+
+6)suba o projeto
 
 ```
 docker-compose up
