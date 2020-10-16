@@ -1,7 +1,7 @@
 clone o repositorio
 para o REDIS
 ```
-sudo service redis satop
+sudo service redis stop
 ```
 pare o POSTGRES
 ```
